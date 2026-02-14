@@ -1,0 +1,59 @@
+site_name: Learn C as a Python Developer
+site_description: A comprehensive guide to learning C, leveraging your Python knowledge
+site_author: Learn C Project
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - content.code.copy
+    - content.code.annotate
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - tables
+  - attr_list
+  - md_in_html
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Why Learn C?: getting-started/why-learn-c.md
+    - Mental Model Shifts: getting-started/mental-models.md
+    - Setting Up: getting-started/setup.md
+  - Chapters:
+    - "1. Hello World": chapters/01-hello-world.md
+    - "2. Types and Variables": chapters/02-types-variables.md
+    - "3. Control Flow": chapters/03-control-flow.md
+    - "4. Functions": chapters/04-functions.md
+    - "5. Arrays and Strings": chapters/05-arrays-strings.md
+    - "6. Pointers": chapters/06-pointers.md
+    - "7. Memory Management": chapters/07-memory.md
+    - "8. Structs": chapters/08-structs.md
+    - "9. File I/O": chapters/09-file-io.md
+    - "10. Building Larger Programs": chapters/10-building-programs.md
+  - Reference:
+    - Python to C Cheatsheet: reference/cheatsheet.md
+    - Common Gotchas: reference/gotchas.md
+    - Next Steps: reference/next-steps.md
